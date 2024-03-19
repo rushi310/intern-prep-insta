@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Listing Page</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<header>
+    <h1>Product Listing Page</h1>
+    <div class="filters">
+        <select id="category-filter">
+            <option value="">All Categories</option>
+            <option value="electronics">Electronics</option>
+            <option value="clothing">Clothing</option>
+            <option value="home">Home & Kitchen</option>
+            
+        </select>
+        <input type="range" id="price-filter" min="0" max="100" value="0" step="10">
+        <label for="price-filter">Price Range: $<span id="price-value">0</span></label>
+    </div>
+</header>
+<div class="product-list">
+    <div class="product-card electronics">
+        <img src="https://m.media-amazon.com/images/I/71zFRCcMS2L._AC_UY218_.jpg" alt="Iphone">
+        <h2>Iphone 15</h2>
+        <p>$1000</p>
+    </div>
+    <div class="product-card clothing">
+        <img src="https://m.media-amazon.com/images/I/61+FREcNlEL._AC_UL320_.jpg" alt="Clothing">
+        <h2>Shoes</h2>
+        <p>$100</p>
+    </div>
+    <div class="product-card home">
+        <img src="https://m.media-amazon.com/images/I/71i4KiS2vBL._AC_UL320_.jpg" alt="Shoes">
+        <h2>Shoes</h2>
+        <p>$100</p>
+    </div>
+    <div class="product-card electronics">
+        <img src="https://m.media-amazon.com/images/I/61BAuSC0UnL._AC_UY218_.jpg" alt="Oneplus 12">
+        <h2>Oneplus 12</h2>
+        <p>$800</p>
+    </div>
+    <div class="product-card clothing">
+        <img src="https://m.media-amazon.com/images/I/71OKaQZbj5L._AC_UL320_.jpg" alt=" Fit shirt">
+        <h2>Fit shirt</h2>
+        <p>$3</p>
+    </div>
+    <div class="product-card home">
+        <img src="https://m.media-amazon.com/images/I/711HDyG4eOL._AC_UY218_.jpg" alt="Toaster">
+        <h2>Toaster</h2>
+        <p>$70</p>
+    </div>
+    
+</div>
+</body>
+</html>
