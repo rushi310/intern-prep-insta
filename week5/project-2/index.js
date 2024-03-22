@@ -52,7 +52,7 @@ const academicRecordsData = [
       teacher_comments: 'Hardworking student',
     },
   },
-  // Add more academic records as needed
+
 ];
 
 const coCurricularActivitiesData = [
@@ -77,7 +77,7 @@ const coCurricularActivitiesData = [
 
 async function populateDatabase() {
   try {
-    // Insert sample data
+   
     await AcademicRecord.insertMany(academicRecordsData);
     await CoCurricularActivity.insertMany(coCurricularActivitiesData);
 
