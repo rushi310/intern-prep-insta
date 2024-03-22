@@ -36,7 +36,7 @@ const coCurricularActivitySchema = new mongoose.Schema({
 const AcademicRecord = mongoose.model('AcademicRecord', academicRecordSchema);
 const CoCurricularActivity = mongoose.model('CoCurricularActivity', coCurricularActivitySchema);
 
-// Sample data
+
 const academicRecordsData = [
   {
     student_id: 'S001',
@@ -72,7 +72,7 @@ const coCurricularActivitiesData = [
       },
     ],
   },
-  // Add more co-curricular activities data as needed
+ 
 ];
 
 async function populateDatabase() {
@@ -81,14 +81,14 @@ async function populateDatabase() {
     await AcademicRecord.insertMany(academicRecordsData);
     await CoCurricularActivity.insertMany(coCurricularActivitiesData);
 
-    // Retrieve data and perform CRUD operations
+    
     const academicRecords = await AcademicRecord.find();
     console.log('Academic Records:', academicRecords);
 
     const coCurricularActivities = await CoCurricularActivity.find();
     console.log('Co-curricular Activities:', coCurricularActivities);
 
-    // Perform additional CRUD operations as needed
+    
   } catch (error) {
     console.error('Error:', error);
   } finally {
